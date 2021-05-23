@@ -22,10 +22,8 @@ function fish_prompt
   set -l ahead    "↑"
   set -l behind   "↓"
   set -l diverged "⥄ "
-  set -l dirty    "🦀"
+  set -l dirty    "*"
   set -l none     ""
-
-  # 
 
   # Displaying useful information in case of browsing a Git repository
   if git_is_repo
@@ -35,8 +33,6 @@ function fish_prompt
     set parent_root_folder (dirname $root_folder)
     set cwd (echo $PWD | sed -e "s|$parent_root_folder/||")
     echo -n -s $color_blue "("$color_dim $cwd $color_blue")" $color_off " "
-
-    echo "🦀"
 
     # Writing an indication in case there's some stashed content in the repository
     if git_is_stashed
