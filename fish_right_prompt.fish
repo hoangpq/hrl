@@ -5,6 +5,4 @@ function fish_right_prompt
   set -l color_off    (set_color -o normal)
 
   # echo -n -s $color_dim (date +%H$color_green:$color_dim%M$color_green:$color_dim%S)$color_off
-  echo "🦀"
-
 end

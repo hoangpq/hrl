@@ -22,7 +22,7 @@ function fish_prompt
   set -l ahead    "↑"
   set -l behind   "↓"
   set -l diverged "⥄ "
-  set -l dirty    "*"
+  set -l dirty    "🦀"
   set -l none     ""
 
   # Displaying useful information in case of browsing a Git repository
