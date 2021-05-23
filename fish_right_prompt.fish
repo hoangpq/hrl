@@ -6,6 +6,6 @@ function fish_right_prompt
 
   echo -n -s $color_dim "Rust: v"(rustc --version | awk '{print $2}')$color_off
   echo ", "
-  echo -n -s $color_dim "Node: "(nvm current)$color_off
+  echo -n -s $color_dim "⬢ "(nvm current)$color_off
   # echo -n -s $color_dim (date +%H$color_green:$color_dim%M$color_green:$color_dim%S)$color_off
 end
