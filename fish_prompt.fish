@@ -34,7 +34,7 @@ function fish_prompt
     set parent_root_folder (dirname $root_folder)
     set cwd (echo $PWD | sed -e "s|$parent_root_folder/||")
     echo -n -s $color_blue "("$color_dim $cwd $color_blue")" $color_off " "
-    echo "via 🦀 "$color_crabv(rustc --version | awk '{print $2}')$color_off,$color_green "⬢ "(nvm current)$color_off
+    echo "via "$color_crab🦀" v"(rustc --version | awk '{print $2}')$color_off,$color_green "⬢ "(nvm current)$color_off
   
     # Writing an indication in case there's some stashed content in the repository
     if git_is_stashed
