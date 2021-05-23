@@ -36,6 +36,8 @@ function fish_prompt
     set cwd (echo $PWD | sed -e "s|$parent_root_folder/||")
     echo -n -s $color_blue "("$color_dim $cwd $color_blue")" $color_off " "
 
+    echo "🦀"
+
     # Writing an indication in case there's some stashed content in the repository
     if git_is_stashed
       echo -n -s $color_purple $stashed $color_off
